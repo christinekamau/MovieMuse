@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover your favourite movie</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- Navigation Bar -->
+<header class="navbar">
+  <a href="index.html" class="logo">MovieMuse<span>.</span></a>
+  <nav class="nav-links"> <a href="index.html">Home</a>
+    <a href="#trending">Trending</a>
+    <a href="#genres">Genres</a>
+    <a href="#watchlist">My List</a>
+  </nav>
+  <div class="search-box">
+    <input type="text"
+           id="searchInput"
+           placeholder="Search movies..."
+           aria-label="Search movies" >
+    <button id="searchButton" type="button">Search</button>
+  </div>
+</header>
+<!-- Featured Movie -->
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">YOUR NEXT MOVIE NIGHT STARTS HERE</p>
+      <h1>Find Your<br>Next Favourite.</h1>
+      <p class="hero-description">
+        Discover incredible stories, explore new worlds, and find the perfect movie for every mood. </p>
+      <div class="hero-buttons">
+        <a href="#trending" class="btn btn-primary"> Explore Movies </a>
+        <a href="#about" class="btn btn-secondary"> Discover MovieMuse </a>
+      </div>
+    </div>
+  </section>
+  <!-- Trending Movies -->
+  <section class="movie-section" id="trending">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">THE CROWD FAVOURITES</p>
+        <h2>Trending Now</h2>
+      </div>
+    </div>
+    <div class="movie-grid" id="movieGrid">
+      <button id="loadMoreButton" class="btn btn-secondary load-more" type="button" hidden>Load more</button>
+      <!-- Movie cards will be added here using JavaScript -->
+    </div>
+    <p id="emptyMessage" class="empty-message" hidden> No movies found. Try another title. </p>
+  </section>
+  <!-- Genres -->
+  <section class="movie-section" id="genres"> <p class="eyebrow">FIND YOUR MOOD</p>
+    <h2>Explore Genres</h2>
+    <div class="genre-list">
+      <button class="genre-button" data-genre="28"> Action </button>
+      <button class="genre-button" data-genre="35"> Comedy </button>
+      <button class="genre-button" data-genre="18"> Drama </button>
+      <button class="genre-button" data-genre="27"> Horror </button>
+      <button class="genre-button" data-genre="10749"> Romance </button>
+      <button class="genre-button" data-genre="878"> Sci-Fi </button>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about-section" id="about">
+    <h2>Every Movie Has a Story.</h2>
+    <p> MovieMuse helps you discover films worth your time. Explore movies, learn about their stories, and find trailers for your next movie night. </p>
+  </section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <a href="index.html" class="logo">MovieMuse<span>.</span></a>
+  <p>Discover stories. Find your next favourite.</p>
+  <p class="copyright"> &copy; 2026 MovieMuse. An independent movie discovery project. </p>
+     <p class="copyright">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
